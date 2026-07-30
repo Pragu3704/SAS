@@ -1,7 +1,0 @@
-{
-  "bundle": "t001_t_demog",
-  "source_file": "t_demog.sas",
-  "source_blob_sha": "823d631270e4eb32e045f1ae83f52dc6622bf346",
-  "source_commit": "9effadcd40a22b5c1b64cc836c173fd022a4d53f",
-  "notes": "Clinical-trial demographics summary table (age/gender/race by treatment). The original read demog.xls via PROC IMPORT from an absolute path; here WORK.DEMOG is built inline with the same columns (SUBJINI DIAGDT DAY MONTH YEAR GENDER RACE TRT) and 16 realistic subjects, so the full pipeline (DATA steps, PROC MEANS/FREQ/SQL/TRANSPOSE/REPORT) runs unchanged and produces the Placebo/Active/All summary. A final PROC PRINT of t_allstats was appended so a plain curl surfaces the computed table."
-}
